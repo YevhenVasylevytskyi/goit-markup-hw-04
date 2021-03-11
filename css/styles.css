@@ -13,6 +13,8 @@
   --footer-link-contact-color: rgba(255, 255, 255, 0.6);
   --section-pt: 94px;
   --section-pb: 94px;
+  --link-social-color: #afb1b8;
+  --accent-link-social-color: #ffffff;
 }
 
 /*общие стили*/
@@ -369,6 +371,7 @@ img {
 
 .team-position {
   margin-top: 10px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -376,6 +379,33 @@ img {
   color: var(--secondary-color);
 }
 
+.team-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-link-item > svg {
+  fill: var(--link-social-color);
+}
+
+.team-link-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.team-link-item:hover,
+.team-link-item:focus {
+  background-color: var(--accent-color);
+}
+
+.team-link-item:hover svg,
+.team-link-item:focus svg {
+  fill: var(--footer-color);
+}
 /*=====END MAIN=======*/
 
 /*=====FOOTER=========*/
