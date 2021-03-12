@@ -195,7 +195,11 @@ img {
 
 /*герой*/
 .herro {
-  background-image: url('../images/index/herro.jpg');
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 40%),
+      rgba(47, 48, 58, 40%)
+    ),
+    url('../images/index/herro.jpg');
   background-repeat: no-repeat;
   max-width: 1600px;
   background-color: var(--herro-color);
